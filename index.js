@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-    origin:"http://localhost:3000",
+    origin:"https://studywellfrontned.netlify.app",
     credentials:true
 }
 
