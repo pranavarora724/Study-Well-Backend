@@ -6,7 +6,8 @@ function connectDatabase(){
 
     mongoose.connect( process.env.MONGO_URL , {
         useNewUrlParser:true,
-        useUnifiedTopology:true
+        useUnifiedTopology:true,
+        strictQuery: true
     }
     ).then(console.log("Database connection successfull"))
     .catch((err)=>{
